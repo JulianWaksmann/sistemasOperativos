@@ -6,6 +6,7 @@ int main() {
     int n = 3;
     int i;
     for (i = 0; i < n; i++) {
+        printf(i);
         fork();
         printf("Soy un proceso!\n");
     }
