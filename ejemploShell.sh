@@ -1,11 +1,12 @@
 #!/bin/bash
 
-# Verificar si se proporciona un argumento
+#Aca verificamos que haya pasado el argumento, puesto que si es 0 no se paso nada e imprimira mensaje.
 if [ $# -eq 0 ]; then
     echo "Error: Uso $0 <nombre_directorio>"
     exit 1
 fi
 
+#Almacenamos el nombre pasado y generamos el path
 nombre_dir="$HOME/$1"
 archivo_txt="$nombre_dir/lista_archivos.txt"
 
